@@ -1,7 +1,7 @@
 
 # function
 def average (a,b,c):# here a,b,c are the arguments 
-    print ("the average is ", (a+b+c)/2)
+    print ("the average is ", (a+b+c)/3)
 
 
 
