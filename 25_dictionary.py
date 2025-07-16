@@ -13,4 +13,4 @@ for key in info.keys():# saare keys print karne ke liye
     print(info[key]) 
 
 
-print(info.items())
+print(info.items())# key value pair print karne ke liye 
