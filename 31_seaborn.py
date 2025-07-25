@@ -42,5 +42,25 @@ sns.displot(df['tip'])
 
 # count plot 
 
-sns.countplot('sex', data = df)
+sns.countplot(x = 'sex', data =df)
+plt.show()
+
+# bar plot 
+
+sns.barplot(x='total_bill', y='sex', data = df)
+plt.show()
+
+# box plot 
+sns.boxplot(x= 'sex',y ='total_bill', data = df, )
+plt.show()
+
+
+
+# agar box plot me he 3 featurs karne hai and 1 color se karna hai tub 
+
+sns.boxplot(x='total_bill',y ='day', hue = 'smoker', data = df)
+plt.show()
+
+# violin plot
+sns.violinplot(x="total_bill",y = "day", data = df, palette = 'rainbow')
 plt.show()
