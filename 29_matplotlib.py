@@ -15,5 +15,5 @@ pyt.plot(x,y,'g--')
 pyt.xlabel('x axis')
 pyt.ylabel('y axis')
 pyt.title('Graph in 2D')
-"""pyt.savefig('Test.png')# to save this image''' """
+"""pyt.savefig('Test.png' )to save this image''' """
 pyt.show()
