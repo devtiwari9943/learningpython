@@ -48,5 +48,17 @@ plt.show()
 
 #   aub age wise batana hai ki is  dataset ke hisab se titanic me kis range ki age vale passengers the 
 
-sns.displot(train['Age'].dropna(),kde=False,color= 'darkgreen',bins= 40)
+sns.displot(train['Age'].dropna(),kde=False,color= 'darkgreen',bins= 40) # .dronap ka matlb hai ki isme null values thi usko skip karne ke liye , kde = false matlb kernal density ali line ko hatane ke liye 
+plt.show()
+
+# aub hume siblings and spouse ka count dekhne ke liye count plot se lete hai 
+
+
+sns.countplot(x='SibSp',data = train,palette='rainbow')
+plt.show()
+
+# box plot
+
+
+sns.boxplot(x='pclass',y='Age', data =train , palette ='winter')
 plt.show()
